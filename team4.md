@@ -95,4 +95,56 @@ void main() {
 >9
 
 
+>[!第5題]
+>請判斷下列程式碼輸出是否跟第4題相同
+
+>[!Ans]
+>輸出結果一樣
+
+
+>[!第6題]
+>給定以下考試分數：  
+>- final scores = [89, 77, 46, 93, 82, 67, 32, 88];  
+>- 使用 sort 將分數從高到低排序。  
+>- 使用 where 查找所有B級分數，即所有分數在 80 到 90 之間的分數。
+
+>[!Ans]
+```dart
+void main() {
+ final scores = [89, 77, 46, 93, 82, 67, 32, 88];
+ scores.sort((a, b) => b - a);
+ print("排序後的分數：$scores");
+ final bGrades = scores.where((score) => score >= 80 && score <= 90).toList();
+ print("B級分數：$bGrades");
+}
+
+```
+
+
+>[!第7題]
+
+>[!Ans]
+> 1. 123  3.(123)
+
+
+
+
+>[!第8題]
+>請寫一個函數讓`evens`中的全部元素相加
+>(不得侷限在目前僅有的數字範圍及長度)
+
+
+>[!Ans]
+```dart
+void main() {
+ List<int> evens = [2, 4, 6, 8, 10, 12];
+ int sum = 0;
+ for (var i in evens) {
+   sum += i;
+ }
+ print(sum);
+}
+
+```
+
 
