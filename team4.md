@@ -78,5 +78,19 @@ void main() {
 >****** ***
 >******* **
 
+>[!第4題]
+>請解釋以下程式碼：
+```dart
+void main() {
+ const numbers = [1, 2, 3];
+ numbers.forEach((number) => print(3 * number));
+}
+```
 
+>[!Ans]
+>建立一個List,拜訪每一個List元素,並輸出3\*元素
+>結果為:
+>3
+>6
+>9
 
