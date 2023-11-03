@@ -123,6 +123,10 @@ void main(){
 evens = [2, 4, 6, 8, 10, 12];
 ```
 ``` dart
+int addAllElements(List<int> list) {
+    // 使用 reduce 列表中的所有元素相加
+    return list.reduce((sum, current) => sum + current);
+}
 void main()
 {
 	List<int> num = [1,2,3,5,5,6,6,8,8,1,10,22,13,18,353];
